@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastpeoplesearch"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+flask = "^2.3.2"
+openpyxl = "^3.1.2"
+pandas = "^2.0.3"
+pymysql = "^1.1.0"
+pytesseract = "^0.3.10"
+requests = "^2.31.0"
+schedule = "^1.2.0"
+selenium = "^4.10.0"
+websocket-client = "^1.6.1"
+zipp = "^3.16.2"
+bs4 = "^0.0.1"
+lxml = "^4.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

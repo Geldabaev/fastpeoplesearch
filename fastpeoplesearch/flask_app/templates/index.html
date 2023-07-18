@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h1>Главное меню</h1>
+                        </div>
+                        <form action="/inn" method="get">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="inn" value="ИНН" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/ogrn" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="ogrn" value="ОГРН" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/pasport" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="pasport" value="Действительность паспорта" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/criminal" method="post">
+                        <div class="forms">
+                            <div class="label">
+                                    <input type="submit" class="i_name" name="pasport" value="Розыск сбежавших заключенных" />
+                            </div>
+                        </div>
+                        </form>
+
+                        <form action="/federal" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="pasport" value="Федеральный розыск" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/interpol" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="interpol" value="Международный розыск" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/suspected" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="interpol" value="Подозреваемые лица в совершении преступлений" />
+                                </div>
+                            </div>
+                        </form>
+                        <form action="/no_trust" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="interpol" value="Реестр лиц, уволенных в связи с утратой доверия" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/notariat" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="interpol" value="Реестр наследственных дел" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <form action="/fet_not_pal" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" name="interpol" value="Реестр уведомлений о залоге движимого имущества" />
+                                </div>
+                            </div>
+                        </form>
+                        <form action="/network" method="post">
+                            <div class="forms">
+                                <div class="label">
+                                        <input type="submit" class="i_name" value="Социальные сети" />
+                                </div>
+                            </div>
+                        </form>
+
+                        </div>
+                        <br />
+                        <div class="bottom">
+                            <div class="button">
+                                <input type="submit" value="Найти" name="Register" class="submit" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

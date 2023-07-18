@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+            <form action="/" method="post">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h1>Международный розыск</h1>
+                        </div>
+                        <div class="forms">
+                            <div class="label">
+                                <div class="w_input">
+                                  {% for i in results %}
+                                    <h3>{{i}}</h3>
+                                  {% endfor %}
+                                </div>
+                            </div>
+                            <div class="label">
+                                <hr />
+                                <div class="w_input">
+                                    <a href="/">На главную</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

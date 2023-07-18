@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+            <form action="/get_fet_not_pal" method="post">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h1>Федеральная нотариальная палата</h1>
+                        </div>
+                        <div class="forms">
+
+                            <div class="label">
+                                <div class="name">Реестр уведомлений о залоге движимого имущества</div>
+                                <div class="name">Номер уведомления:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="search" value="" required="required" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="bottom">
+                            <div class="button">
+                                <input type="submit" value="НАЙТИ" class="submit" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="bottom">
+                            <a href="/">Назад</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

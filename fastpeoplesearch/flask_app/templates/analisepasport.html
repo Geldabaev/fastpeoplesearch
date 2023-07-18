@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+            <form action="/" method="get">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h2>{{ analise_result }}</h2>
+                        </div>
+
+                        <br />
+                        <div class="bottom">
+                            <div class="button">
+                                <input type="submit" value="ГЛАВНОЕ МЕНЮ" name="Register" class="submit" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="bottom">
+                            <a href="/">Назад</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

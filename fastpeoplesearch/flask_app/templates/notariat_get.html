@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+            <form action="/get_trust" method="post">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h1>Реестр наследственных дел</h1>
+                        </div>
+                        <div class="forms">
+
+                            <div class="label">
+                                {{result}}
+                            </div>
+                        </div>
+                        <br />
+                        <hr />
+                        <div class="bottom">
+                            <a href="/">Назад</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

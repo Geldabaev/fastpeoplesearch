@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+            <form action="/getinn" method="post">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h1>ИНН</h1>
+                        </div>
+                        <div class="forms">
+
+                            <div class="label">
+                                <div class="name">ИМЯ:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="first" value="" required="required" />
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <div class="name">ФАМИЛИЯ:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="last" value="" required="required" />
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <div class="name">ОТЧЕСТВО</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="surname" value="" />
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <div class="name">ДАТА РОЖДЕНИЯ:</div>
+                                <div class="w_input">
+                                    <input type="date" class="i_name" name="date" value="" id="date" />
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <div class="name">НОМЕР И СЕРИЯ ПАСПОРТА:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="docnumber" value="" />
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <div class="name">ДАТА ВЫДАЧА ПАСПОРТА:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="docdate" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="bottom">
+                            <div class="button">
+                                <input type="submit" value="Найти" name="Register" class="submit" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="bottom">
+                            <a href="/">Назад</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>

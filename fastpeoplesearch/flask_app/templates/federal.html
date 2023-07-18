@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Входные данные</title>
+    </head>
+    <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper">
+        <div class="main">
+            <form action="/resfederal" method="post">
+                <div class="container">
+                    <div class="form">
+                        <div class="header">
+                            <h1>Федеральный розыск</h1>
+                        </div>
+                        <div class="forms">
+
+                            <div class="label">
+                                <div class="name">ФАМИЛИЯ:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="last" value="" required="required" />
+                                </div>
+                            </div>
+
+                            <div class="label">
+                                <div class="name">ИМЯ:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="first" value="" required="required" />
+                                </div>
+                            </div>
+                            <div class="label">
+                                <div class="name">ГОД РОЖДЕНИЯ:</div>
+                                <div class="w_input">
+                                    <input type="text" class="i_name" name="year" value="" id="date" />
+                                </div>
+                            </div>
+                            <div class="label">
+                                <div class="name">ВАШ ЭЛЕКТРОННЫЙ АДРЕС:</div>
+                                <div class="w_input">
+                                    <input type="email" class="i_name" name="mail" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="bottom">
+                            <div class="button">
+                                <input type="submit" value="Найти" name="Register" class="submit" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="bottom">
+                            <a href="/">Назад</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
